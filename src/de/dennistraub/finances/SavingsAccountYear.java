@@ -57,4 +57,16 @@ public class SavingsAccountYear {
         double capitalGainsAsDouble = capitalGainsWithdrawn();
         return (int)((capitalGainsAsDouble / (1 - taxRateAsDouble)) - capitalGainsAsDouble);
     }
+
+    public int startingCapitalGains() {
+        return startingBalance() - startingPrincipal();
+    }
+
+    public int endingCapitalGains() {
+        return startingCapitalGains() + interestEarned();
+    }
+
+    public int interestEarned() {
+        return (startingBalance - totalWithdrawn()) * interestRate / 100;
+    }
 }

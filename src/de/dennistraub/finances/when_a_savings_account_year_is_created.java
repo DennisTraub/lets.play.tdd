@@ -1,6 +1,7 @@
 /* Copyright 2013 by Dennis Traub */
 package de.dennistraub.finances;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -29,5 +30,17 @@ public class when_a_savings_account_year_is_created {
     @Test
     public void ending_balance_has_interest_rate_applied() {
         assertEquals(11000, newSUT().endingBalance(25));
+    }
+
+    @Test
+    public void earned_interest_is_calculated() {
+        assertEquals(1000, newSUT().interestEarned());
+    }
+
+    @Test
+    public void ending_capital_gains_includes_earned_interest() {
+        SavingsAccountYear year = newSUT();
+        assertEquals(3000, year.startingCapitalGains());
+        assertEquals(4000, year.endingCapitalGains());
     }
 }
