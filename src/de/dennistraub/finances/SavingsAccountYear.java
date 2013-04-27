@@ -25,17 +25,13 @@ public class SavingsAccountYear {
         return interestRate;
     }
 
-    public int totalWithdrawnExceptCapitalGainsTax() {
-        return totalWithdrawnExceptCapitalGainsTax;
-    }
-
     public int endingBalance(int taxRate) {
-        int endingBeforeInterest = startingBalance() - totalWithdrawnExceptCapitalGainsTax() - capitalGainsTaxIncurred(taxRate);
+        int endingBeforeInterest = startingBalance() - totalWithdrawnExceptCapitalGainsTax - capitalGainsTaxIncurred(taxRate);
         return endingBeforeInterest + interestEarned(taxRate);
     }
 
     public int endingPrincipal() {
-        int result = startingPrincipal() - totalWithdrawnExceptCapitalGainsTax();
+        int result = startingPrincipal() - totalWithdrawnExceptCapitalGainsTax;
         return Math.max(0, result);
     }
 
@@ -48,7 +44,7 @@ public class SavingsAccountYear {
     }
 
     public int capitalGainsWithdrawn() {
-        int result = (startingPrincipal() - totalWithdrawnExceptCapitalGainsTax()) * -1;
+        int result = (startingPrincipal() - totalWithdrawnExceptCapitalGainsTax) * -1;
         return Math.max(0, result);
     }
 
@@ -67,10 +63,10 @@ public class SavingsAccountYear {
     }
 
     public int interestEarned(int taxRate) {
-        return (startingBalance - totalWithdrawnExceptCapitalGainsTax() - capitalGainsTaxIncurred(taxRate)) * interestRate / 100;
+        return (startingBalance - totalWithdrawnExceptCapitalGainsTax - capitalGainsTaxIncurred(taxRate)) * interestRate / 100;
     }
 
     public int totalWithdrawn(int taxRate) {
-        return totalWithdrawnExceptCapitalGainsTax() + capitalGainsTaxIncurred(taxRate);
+        return totalWithdrawnExceptCapitalGainsTax + capitalGainsTaxIncurred(taxRate);
     }
 }

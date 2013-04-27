@@ -37,6 +37,6 @@ public class when_withdrawing_funds {
         SavingsAccountYear year = newSUT();
         year.withdraw(1000);
         year.withdraw(2000);
-        assertEquals(3000, year.totalWithdrawnExceptCapitalGainsTax());
+        assertEquals(3000, year.totalWithdrawn(25));
     }
 }
