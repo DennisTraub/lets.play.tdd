@@ -45,11 +45,4 @@ public class when_withdrawing_more_than_principal {
         year.withdraw(1000);
         assertEquals(866, year.interestEarned());
     }
-
-    @Test
-    public void ending_capital_gains_includes_capital_gains_withdrawn() {
-        StockMarketYear year = new StockMarketYear(10000,0,10,.25);
-        year.withdraw(1000);
-        assertEquals(9533, year.endingCapitalGains());
-    }
 }

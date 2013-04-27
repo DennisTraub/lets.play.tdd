@@ -22,4 +22,11 @@ public class when_next_year_is_retrieved {
         StockMarketYear thisYear = newSUT();
         assertEquals(thisYear.interestRate(), thisYear.nextYear().interestRate());
     }
+
+    @Test
+    public void starting_principal_equals_this_years_ending_principal() {
+        StockMarketYear thisYear = newSUT();
+        assertEquals(thisYear.endingPrincipal(), thisYear.nextYear().startingPrincipal());
+    }
+    
 }

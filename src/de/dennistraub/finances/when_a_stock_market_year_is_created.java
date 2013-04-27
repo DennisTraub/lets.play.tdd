@@ -35,11 +35,4 @@ public class when_a_stock_market_year_is_created {
     public void earned_interest_is_calculated() {
         assertEquals(1000, newSUT().interestEarned());
     }
-
-    @Test
-    public void ending_capital_gains_includes_earned_interest() {
-        StockMarketYear year = newSUT();
-        assertEquals(3000, year.startingCapitalGains());
-        assertEquals(4000, year.endingCapitalGains());
-    }
 }

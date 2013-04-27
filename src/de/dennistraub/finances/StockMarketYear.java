@@ -59,10 +59,6 @@ public class StockMarketYear {
         return startingBalance() - startingPrincipal();
     }
 
-    public int endingCapitalGains() {
-        return endingBalance() - endingPrincipal();
-    }
-
     public int totalWithdrawn() {
         return totalWithdrawals + capitalGainsTaxIncurred();
     }
