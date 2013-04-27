@@ -33,6 +33,13 @@ public class when_withdrawing_more_than_principal {
     }
 
     @Test
+    public void total_withdrawn_includes_capital_gains_tax() {
+        SavingsAccountYear year = new SavingsAccountYear(10000,0,10);
+        year.withdraw(1000);
+        assertEquals(1333, year.totalWithdrawn(25));
+    }
+
+    @Test
     public void capital_gains_taxes_earn_no_interest() {
         SavingsAccountYear year = new SavingsAccountYear(10000,0,10);
         year.withdraw(1000);
