@@ -17,9 +17,17 @@ public class _SavingsAccountTest {
     }
 
     @Test
-    public void negativeBalanceIsjustFine() {
+    public void negativeBalanceIsJustFine() {
         SavingsAccount account = new SavingsAccount();
         account.withdraw(100);
         assertEquals(-100, account.balance());
+    }
+
+    @Test
+    public void nextYear() {
+        SavingsAccount account = new SavingsAccount();
+        account.deposit(10000);
+        SavingsAccount nextYear = account.nextYear(10);
+        assertEquals(11000, nextYear.balance());
     }
 }
