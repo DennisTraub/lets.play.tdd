@@ -5,13 +5,17 @@ import java.math.BigDecimal;
 
 public class TaxRate {
 
-    private BigDecimal rate;
+    private double rate;
 
     public TaxRate(double rateAsPercentage) {
-        this.rate = new BigDecimal(rateAsPercentage).divide(new BigDecimal(100));
+        this.rate = rateAsPercentage / 100.0;
     }
 
-    public int taxFor(int amount) {
-        return rate.multiply(new BigDecimal(amount)).intValue();
+    public int simpleTaxFor(int amount) {
+        return (int)(rate * amount);
+    }
+
+    public int compoundTaxFor(int amount) {
+        return (int)(amount / (1 - rate) - amount);
     }
 }

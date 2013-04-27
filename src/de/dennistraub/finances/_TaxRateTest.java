@@ -8,15 +8,15 @@ import static org.junit.Assert.*;
 public class _TaxRateTest {
 
     @Test
-    public void nothing() {
-        TaxRate taxRate = new TaxRate(0);
-        assertEquals(0, taxRate.taxFor(1000));
+    public void simpleTaxAppliesTaxRateToAmount() {
+        TaxRate taxRate = new TaxRate(25);
+        assertEquals(250, taxRate.simpleTaxFor(1000));
     }
 
     @Test
-    public void simpleTax() {
+    public void compundTaxIsTheAmountOfTaxThatIsIncurredIfYouPayTaxOnTax() {
         TaxRate taxRate = new TaxRate(25);
-        assertEquals(250, taxRate.taxFor(1000));
+        assertEquals(333, taxRate.compoundTaxFor(1000));
     }
 
 }
