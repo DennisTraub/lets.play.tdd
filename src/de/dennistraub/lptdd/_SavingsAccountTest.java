@@ -5,13 +5,21 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class _TestSomething {
+public class _SavingsAccountTest {
+
     @Test
-    public void nothing() {
+    public void depositAndWithdrawal() {
         SavingsAccount account = new SavingsAccount();
         account.deposit(100);
         assertEquals("after deposit", 100, account.balance());
         account.withdraw(50);
         assertEquals("after withdrawal", 50, account.balance());
+    }
+
+    @Test
+    public void negativeBalanceIsjustFine() {
+        SavingsAccount account = new SavingsAccount();
+        account.withdraw(100);
+        assertEquals(-100, account.balance());
     }
 }
