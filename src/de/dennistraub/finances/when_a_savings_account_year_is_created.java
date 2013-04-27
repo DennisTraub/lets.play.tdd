@@ -34,13 +34,13 @@ public class when_a_savings_account_year_is_created {
 
     @Test
     public void earned_interest_is_calculated() {
-        assertEquals(1000, newSUT().interestEarned());
+        assertEquals(1000, newSUT().interestEarned(25));
     }
 
     @Test
     public void ending_capital_gains_includes_earned_interest() {
         SavingsAccountYear year = newSUT();
         assertEquals(3000, year.startingCapitalGains());
-        assertEquals(4000, year.endingCapitalGains());
+        assertEquals(4000, year.endingCapitalGains(25));
     }
 }

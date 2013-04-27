@@ -1,25 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="926a5211-e074-461a-9591-b2260104d88d" name="Default" comment="" />
+    <list default="true" id="926a5211-e074-461a-9591-b2260104d88d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/dennistraub/finances/SavingsAccountYear.java" afterPath="$PROJECT_DIR$/src/de/dennistraub/finances/SavingsAccountYear.java" />
+    </list>
     <ignored path="LetsPlayTdd.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Something.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367063481171" ignored="false" />
     <file path="/_TestSomething.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367080508752" ignored="false" />
     <file path="/fragment.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367082550984" ignored="false" />
-    <file path="/Dummy.txt" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367063904412" ignored="false" />
+    <file path="/Dummy.txt" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367084191701" ignored="false" />
     <file path="/SavingsAccount.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367083654229" ignored="false" />
     <file path="/New Method Body.txt.ft" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367064136570" ignored="false" />
     <file path="/_SavingsAccountTest.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367071940899" ignored="false" />
     <file path="/Main.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367069931086" ignored="false" />
     <file path="/scratchpad.txt" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367069242385" ignored="false" />
-    <file path="/SavingsAccountYear.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367083655360" ignored="false" />
+    <file path="/SavingsAccountYear.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367084716149" ignored="false" />
     <file path="/_SavingsAccountYearTest.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367076589483" ignored="false" />
     <file path="/_SavingsAccountYearConstructor.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367081522804" ignored="false" />
     <file path="/When_retrieving_next_year.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367082002887" ignored="false" />
     <file path="/when_a_savings_account_year_is_created.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367083558612" ignored="false" />
     <file path="/when_withdrawing_capital_gains.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367082775134" ignored="false" />
     <file path="/when_withdrawing_funds.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367082538428" ignored="false" />
+    <file path="/when_withdrawing_more_than_principal.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367084429685" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,10 +93,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="when_a_savings_account_year_is_created.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/when_a_savings_account_year_is_created.java">
+      <file leaf-file-name="when_withdrawing_more_than_principal.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/when_withdrawing_more_than_principal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="9" selection-start="940" selection-end="940" vertical-scroll-proportion="0.0">
+            <state line="11" column="5" selection-start="297" selection-end="297" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,7 +107,16 @@
       <file leaf-file-name="SavingsAccountYear.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/SavingsAccountYear.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="0" selection-start="1864" selection-end="1864" vertical-scroll-proportion="0.4823718">
+            <state line="33" column="60" selection-start="983" selection-end="983" vertical-scroll-proportion="0.3888">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="when_a_savings_account_year_is_created.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/when_a_savings_account_year_is_created.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="53" selection-start="1163" selection-end="1163" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -116,6 +128,14 @@
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -133,8 +153,8 @@
         <option value="$PROJECT_DIR$/src/de/dennistraub/finances/when_next_year_is_retrieved.java" />
         <option value="$PROJECT_DIR$/src/de/dennistraub/finances/when_withdrawing_funds.java" />
         <option value="$PROJECT_DIR$/src/de/dennistraub/finances/when_withdrawing_capital_gains.java" />
-        <option value="$PROJECT_DIR$/src/de/dennistraub/finances/when_withdrawing_more_than_principal.java" />
         <option value="$PROJECT_DIR$/src/de/dennistraub/finances/when_a_savings_account_year_is_created.java" />
+        <option value="$PROJECT_DIR$/src/de/dennistraub/finances/when_withdrawing_more_than_principal.java" />
         <option value="$PROJECT_DIR$/src/de/dennistraub/finances/SavingsAccountYear.java" />
       </list>
     </option>
@@ -147,7 +167,7 @@
     <option name="width" value="1031" />
     <option name="height" value="1050" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -174,7 +194,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -213,21 +232,23 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="MemberChooser.sorted" value="false" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="editor.preferences.appearance" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -268,6 +289,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -294,19 +328,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -436,8 +457,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920536" sideWeight="0.6721311" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18575852" sideWeight="0.74244124" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2575588" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18575852" sideWeight="0.743561" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25643897" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -510,6 +531,20 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/when_a_savings_account_year_is_created.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/SavingsAccountYear.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="0" selection-start="1864" selection-end="1864" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/SavingsAccountYear.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="22" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0">
@@ -533,7 +568,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/when_withdrawing_funds.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="4" selection-start="183" selection-end="183" vertical-scroll-proportion="0.2283105">
+        <state line="8" column="0" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#newSUT#0;class#when_withdrawing_funds#0" expanded="false" />
@@ -541,18 +576,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/when_withdrawing_more_than_principal.java">
+    <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/when_a_savings_account_year_is_created.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="49" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0456621">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="43" column="53" selection-start="1163" selection-end="1163" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/when_a_savings_account_year_is_created.java">
+    <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/when_withdrawing_more_than_principal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="9" selection-start="940" selection-end="940" vertical-scroll-proportion="0.0">
+        <state line="11" column="5" selection-start="297" selection-end="297" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -561,7 +594,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/SavingsAccountYear.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="0" selection-start="1864" selection-end="1864" vertical-scroll-proportion="0.4823718">
+        <state line="33" column="60" selection-start="983" selection-end="983" vertical-scroll-proportion="0.3888">
           <folding />
         </state>
       </provider>

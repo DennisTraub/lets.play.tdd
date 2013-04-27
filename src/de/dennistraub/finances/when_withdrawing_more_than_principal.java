@@ -31,4 +31,11 @@ public class when_withdrawing_more_than_principal {
         year.withdraw(5000);
         assertEquals(4767, year.endingBalance(25));
     }
+
+    @Test
+    public void capital_gains_taxes_earn_no_interest() {
+        SavingsAccountYear year = new SavingsAccountYear(10000,0,10);
+        year.withdraw(1000);
+        assertEquals(866, year.interestEarned(25));
+    }
 }
