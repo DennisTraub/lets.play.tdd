@@ -28,8 +28,10 @@ public class StockMarketYear {
     }
 
     public int endingBalance() {
-        int endingBeforeInterest = startingBalance() - totalWithdrawals - capitalGainsTaxIncurred();
-        return endingBeforeInterest + interestEarned();
+        return startingBalance()
+                - totalWithdrawals
+                - capitalGainsTaxIncurred()
+                + interestEarned();
     }
 
     public int endingPrincipal() {
@@ -55,15 +57,15 @@ public class StockMarketYear {
         return (int)((capitalGainsAsDouble / (1 - taxRate)) - capitalGainsAsDouble);
     }
 
-    public int startingCapitalGains() {
-        return startingBalance() - startingPrincipal();
-    }
-
     public int totalWithdrawn() {
         return totalWithdrawals + capitalGainsTaxIncurred();
     }
 
     public int interestEarned() {
         return (startingBalance - totalWithdrawn()) * interestRate / 100;
+    }
+
+    public double taxRate() {
+        return taxRate;
     }
 }

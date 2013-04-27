@@ -7,32 +7,30 @@ import static org.junit.Assert.assertEquals;
 
 public class when_a_stock_market_year_is_created {
 
-    private StockMarketYear newSUT() {
+    private StockMarketYear newYear() {
         return new StockMarketYear(10000, 7000, 10, .25);
     }
 
     @Test
-    public void starting_balance_is_set() {
-        assertEquals(10000, newSUT().startingBalance());
+    public void the_constructor_parameters_are_set() {
+        StockMarketYear year = newYear();
+        assertEquals("starting balance", 10000, year.startingBalance());
+        assertEquals("starting principal", 7000, year.startingPrincipal());
+        assertEquals("interest rate", 10, year.interestRate());
+        assertEquals("tax rate", .25, year.taxRate(), 0.001);
     }
 
     @Test
-    public void starting_principal_is_set() {
-        assertEquals(7000, newSUT().startingPrincipal());
+    public void ending_balance_includes_interest() {
+        assertEquals(11000, newYear().endingBalance());
     }
 
     @Test
-    public void interest_rate_is_set() {
-        assertEquals(10, newSUT().interestRate());
-    }
-
-    @Test
-    public void ending_balance_has_interest_rate_applied() {
-        assertEquals(11000, newSUT().endingBalance());
-    }
-
-    @Test
-    public void earned_interest_is_calculated() {
-        assertEquals(1000, newSUT().interestEarned());
+    public void next_years_values_get_carried_over() {
+        StockMarketYear thisYear = newYear();
+        StockMarketYear nextYear = thisYear.nextYear();
+        assertEquals("balance", nextYear.startingBalance(), thisYear.endingBalance());
+        assertEquals("principal", nextYear.startingPrincipal(), thisYear.endingPrincipal());
+        assertEquals("interest rate", nextYear.interestRate(), thisYear.interestRate());
     }
 }
