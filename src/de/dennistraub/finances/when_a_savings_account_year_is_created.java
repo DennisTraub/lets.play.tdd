@@ -9,7 +9,7 @@ import static org.junit.Assert.assertEquals;
 public class when_a_savings_account_year_is_created {
 
     private SavingsAccountYear newSUT() {
-        return new SavingsAccountYear(10000, 7000, 10);
+        return new SavingsAccountYear(10000, 7000, 10, .25);
     }
 
     @Test
@@ -29,18 +29,18 @@ public class when_a_savings_account_year_is_created {
 
     @Test
     public void ending_balance_has_interest_rate_applied() {
-        assertEquals(11000, newSUT().endingBalance(25));
+        assertEquals(11000, newSUT().endingBalance());
     }
 
     @Test
     public void earned_interest_is_calculated() {
-        assertEquals(1000, newSUT().interestEarned(25));
+        assertEquals(1000, newSUT().interestEarned());
     }
 
     @Test
     public void ending_capital_gains_includes_earned_interest() {
         SavingsAccountYear year = newSUT();
         assertEquals(3000, year.startingCapitalGains());
-        assertEquals(4000, year.endingCapitalGains(25));
+        assertEquals(4000, year.endingCapitalGains());
     }
 }

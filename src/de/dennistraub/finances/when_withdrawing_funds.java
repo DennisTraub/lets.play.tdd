@@ -8,14 +8,14 @@ import static org.junit.Assert.assertEquals;
 public class when_withdrawing_funds {
 
     private SavingsAccountYear newSUT() {
-        return new SavingsAccountYear(10000, 3000, 10);
+        return new SavingsAccountYear(10000, 3000, 10, .25);
     }
 
     @Test
     public void withdrawn_funds_accumulate_no_gains() {
         SavingsAccountYear year = newSUT();
         year.withdraw(1000);
-        assertEquals(9900, year.endingBalance(25));
+        assertEquals(9900, year.endingBalance());
     }
 
     @Test
@@ -37,6 +37,6 @@ public class when_withdrawing_funds {
         SavingsAccountYear year = newSUT();
         year.withdraw(1000);
         year.withdraw(2000);
-        assertEquals(3000, year.totalWithdrawn(25));
+        assertEquals(3000, year.totalWithdrawn());
     }
 }

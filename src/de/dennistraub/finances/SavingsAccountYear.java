@@ -6,11 +6,13 @@ public class SavingsAccountYear {
     private int startingPrincipal;
     private int interestRate;
     private int totalWithdrawals;
+    private double taxRate;
 
-    public SavingsAccountYear(int startingBalance, int startingPrincipal, int interestRate) {
+    public SavingsAccountYear(int startingBalance, int startingPrincipal, int interestRate, double taxRate) {
         this.startingBalance = startingBalance;
         this.startingPrincipal = startingPrincipal;
         this.interestRate = interestRate;
+        this.taxRate = taxRate;
     }
 
     public int startingBalance() {
@@ -25,9 +27,9 @@ public class SavingsAccountYear {
         return interestRate;
     }
 
-    public int endingBalance(int taxRate) {
-        int endingBeforeInterest = startingBalance() - totalWithdrawals - capitalGainsTaxIncurred(taxRate);
-        return endingBeforeInterest + interestEarned(taxRate);
+    public int endingBalance() {
+        int endingBeforeInterest = startingBalance() - totalWithdrawals - capitalGainsTaxIncurred();
+        return endingBeforeInterest + interestEarned();
     }
 
     public int endingPrincipal() {
@@ -35,8 +37,8 @@ public class SavingsAccountYear {
         return Math.max(0, result);
     }
 
-    public SavingsAccountYear nextYear(int capitalGainsTaxRate) {
-        return new SavingsAccountYear(endingBalance(capitalGainsTaxRate), startingPrincipal, interestRate());
+    public SavingsAccountYear nextYear() {
+        return new SavingsAccountYear(endingBalance(), startingPrincipal, interestRate(), taxRate);
     }
 
     public void withdraw(int amount) {
@@ -48,25 +50,24 @@ public class SavingsAccountYear {
         return Math.max(0, result);
     }
 
-    public int capitalGainsTaxIncurred(int taxRate) {
-        double taxRateAsDouble = taxRate / 100.0;
+    public int capitalGainsTaxIncurred() {
         double capitalGainsAsDouble = capitalGainsWithdrawn();
-        return (int)((capitalGainsAsDouble / (1 - taxRateAsDouble)) - capitalGainsAsDouble);
+        return (int)((capitalGainsAsDouble / (1 - taxRate)) - capitalGainsAsDouble);
     }
 
     public int startingCapitalGains() {
         return startingBalance() - startingPrincipal();
     }
 
-    public int endingCapitalGains(int taxRate) {
-        return startingCapitalGains() + interestEarned(taxRate);
+    public int endingCapitalGains() {
+        return startingCapitalGains() + interestEarned();
     }
 
-    public int totalWithdrawn(int taxRate) {
-        return totalWithdrawals + capitalGainsTaxIncurred(taxRate);
+    public int totalWithdrawn() {
+        return totalWithdrawals + capitalGainsTaxIncurred();
     }
 
-    public int interestEarned(int taxRate) {
-        return (startingBalance - totalWithdrawn(taxRate)) * interestRate / 100;
+    public int interestEarned() {
+        return (startingBalance - totalWithdrawn()) * interestRate / 100;
     }
 }
