@@ -53,6 +53,8 @@ public class SavingsAccountYear {
     }
 
     public int capitalGainsTaxIncurred(int taxRate) {
-        return capitalGainsWithdrawn() * taxRate / 100;
+        double taxRateAsDouble = taxRate / 100.0;
+        double capitalGainsAsDouble = capitalGainsWithdrawn();
+        return (int)((capitalGainsAsDouble / (1 - taxRateAsDouble)) - capitalGainsAsDouble);
     }
 }

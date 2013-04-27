@@ -83,18 +83,17 @@ public class _SavingsAccountYearTest {
     }
 
     @Test
-    public void capitalGainsTaxIncurred() {
+    public void capitalGainsTaxIncurred_MustCoverAllTaxes() {
         SavingsAccountYear year = new SavingsAccountYear(10000, 3000, 10);
         year.withdraw(5000);
-        assertEquals(500, year.capitalGainsTaxIncurred(25));
+        assertEquals(666, year.capitalGainsTaxIncurred(25));
     }
 
     @Test
-    public void capitalGainstaxIsIncludedInEndingBalance() {
+    public void capitalGainsTaxIsIncludedInEndingBalance() {
         SavingsAccountYear year = new SavingsAccountYear(10000, 3000, 10);
         year.withdraw(5000);
-        assertEquals(500, year.capitalGainsTaxIncurred(25));
-        assertEquals(4950, year.endingBalance(25));
+        assertEquals(4767, year.endingBalance(25));
     }
 
 //    @Test
