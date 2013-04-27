@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 public class _SavingsAccountTest {
 
     private SavingsAccountYear newAccount() {
-        return new SavingsAccountYear(10000, 10);
+        return new SavingsAccountYear(10000, 10000, 10);
     }
 
     @Test
@@ -36,5 +36,21 @@ public class _SavingsAccountTest {
     public void nextYearsInterestRateEqualsThisYearsInterestRate() {
         SavingsAccountYear thisYear = newAccount();
         assertEquals(thisYear.interestRate(), thisYear.nextYear().interestRate());
+    }
+
+    @Test
+    public void withdrawingFundsOccursAtTheBeginningOfTheYear() {
+        SavingsAccountYear year = new SavingsAccountYear(10000, 10000, 10);
+        year.withdraw(1000);
+        assertEquals(9900, year.endingBalance());
+    }
+
+    @Test
+    public void withdrawingMoreThanPrincipalIncursCapitalGainsTax() {
+        SavingsAccountYear year = new SavingsAccountYear(10000, 7000, 10);
+        year.withdraw(3000);
+        assertEquals(7700, year.endingBalance());
+        year.withdraw(5000);
+        assertEquals(2200 - (1250), year.endingBalance(), 0.1);
     }
 }

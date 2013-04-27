@@ -5,15 +5,15 @@
     <ignored path="LetsPlayTdd.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Something.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367063481171" ignored="false" />
-    <file path="/_TestSomething.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367070930163" ignored="false" />
+    <file path="/_TestSomething.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367072150524" ignored="false" />
     <file path="/fragment.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367063966616" ignored="false" />
     <file path="/Dummy.txt" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367063904412" ignored="false" />
-    <file path="/SavingsAccount.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367070344400" ignored="false" />
+    <file path="/SavingsAccount.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367072652088" ignored="false" />
     <file path="/New Method Body.txt.ft" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367064136570" ignored="false" />
-    <file path="/_SavingsAccountTest.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367070309419" ignored="false" />
+    <file path="/_SavingsAccountTest.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367071940899" ignored="false" />
     <file path="/Main.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367069931086" ignored="false" />
     <file path="/scratchpad.txt" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367069242385" ignored="false" />
-    <file path="/SavingsAccountYear.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367069694625" ignored="false" />
+    <file path="/SavingsAccountYear.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367072337919" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +96,7 @@
       <file leaf-file-name="_SavingsAccountTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/_SavingsAccountTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="46" selection-start="709" selection-end="709" vertical-scroll-proportion="0.68358713">
+            <state line="43" column="28" selection-start="1290" selection-end="1290" vertical-scroll-proportion="0.38917089">
               <folding />
             </state>
           </provider>
@@ -105,7 +105,7 @@
       <file leaf-file-name="SavingsAccountYear.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/SavingsAccountYear.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="5" selection-start="719" selection-end="719" vertical-scroll-proportion="0.0">
+            <state line="20" column="5" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -524,14 +524,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/SavingsAccountYear.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="5" selection-start="719" selection-end="719" vertical-scroll-proportion="0.0">
+        <state line="20" column="5" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/_SavingsAccountTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="46" selection-start="709" selection-end="709" vertical-scroll-proportion="0.68358713">
+        <state line="43" column="28" selection-start="1290" selection-end="1290" vertical-scroll-proportion="0.38917089">
           <folding />
         </state>
       </provider>

@@ -2,11 +2,13 @@
 package de.dennistraub.finances;
 
 public class SavingsAccountYear {
+    private int startingBalance;
+    private int capitalGainsAmount;
     private int interestRate;
-    private int startingBalance = 0;
 
-    public SavingsAccountYear(int startingBalance, int interestRate) {
+    public SavingsAccountYear(int startingBalance, int capitalGainsAmount, int interestRate) {
         this.startingBalance = startingBalance;
+        this.capitalGainsAmount = capitalGainsAmount;
         this.interestRate = interestRate;
     }
 
@@ -23,6 +25,10 @@ public class SavingsAccountYear {
     }
 
     public SavingsAccountYear nextYear() {
-        return new SavingsAccountYear(this.endingBalance(), interestRate);
+        return new SavingsAccountYear(this.endingBalance(), capitalGainsAmount, interestRate);
+    }
+
+    public void withdraw(int amount) {
+        this.startingBalance -= amount;
     }
 }
