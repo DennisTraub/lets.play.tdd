@@ -1,5 +1,5 @@
 /* Copyright 2013 by Dennis Traub */
-package de.dennistraub.lptdd;
+package de.dennistraub.finances;
 
 public class SavingsAccount {
     int balance = 0;
