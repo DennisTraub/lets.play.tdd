@@ -8,27 +8,9 @@ import static org.junit.Assert.*;
 public class _SavingsAccountTest {
 
     @Test
-    public void depositAndWithdrawal() {
-        SavingsAccountYear account = new SavingsAccountYear();
-        account.deposit(100);
-        assertEquals("after deposit", 100, account.balance());
-        account.withdraw(50);
-        assertEquals("after withdrawal", 50, account.balance());
-    }
-
-    @Test
-    public void negativeBalanceIsJustFine() {
-        SavingsAccountYear account = new SavingsAccountYear();
-        account.withdraw(100);
-        assertEquals(-100, account.balance());
-    }
-
-    @Test
-    public void nextYear() {
-        SavingsAccountYear account = new SavingsAccountYear();
-        account.deposit(10000);
-        SavingsAccountYear nextYear = account.nextYear(10);
-        assertEquals(11000, nextYear.balance());
+    public void startingBalance() {
+        SavingsAccountYear account = new SavingsAccountYear(10000, 10);
+        assertEquals(10000, account.startingBalance());
     }
 
     @Test
@@ -37,4 +19,15 @@ public class _SavingsAccountTest {
         assertEquals(11000, account.endingBalance());
     }
 
+    @Test
+    public void nextYearsStartingBalanceShouldEqualThisYearsEndingBalance() {
+        SavingsAccountYear thisYear = new SavingsAccountYear(10000, 10);
+        assertEquals(thisYear.nextYear().startingBalance(), thisYear.endingBalance());
+    }
+
+    @Test
+    public void nextYearsInterestRateEqualsThisYearsInterestRate() {
+        SavingsAccountYear thisYear = new SavingsAccountYear(10000, 10);
+        assertEquals(thisYear.interestRate(), thisYear.nextYear().interestRate());
+    }
 }
