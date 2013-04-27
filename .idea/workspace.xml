@@ -5,7 +5,7 @@
     <ignored path="LetsPlayTdd.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Something.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367063481171" ignored="false" />
-    <file path="/_TestSomething.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367070676277" ignored="false" />
+    <file path="/_TestSomething.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367070930163" ignored="false" />
     <file path="/fragment.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367063966616" ignored="false" />
     <file path="/Dummy.txt" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367063904412" ignored="false" />
     <file path="/SavingsAccount.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367070344400" ignored="false" />
@@ -96,7 +96,7 @@
       <file leaf-file-name="_SavingsAccountTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/_SavingsAccountTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="64" selection-start="454" selection-end="454" vertical-scroll-proportion="0.4822335">
+            <state line="29" column="46" selection-start="709" selection-end="709" vertical-scroll-proportion="0.68358713">
               <folding />
             </state>
           </provider>
@@ -105,7 +105,7 @@
       <file leaf-file-name="SavingsAccountYear.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/SavingsAccountYear.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="414" selection-end="414" vertical-scroll-proportion="0.0">
+            <state line="26" column="5" selection-start="719" selection-end="719" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -428,7 +428,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16511868" sideWeight="0.70548713" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29451287" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29451287" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -524,14 +524,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/SavingsAccountYear.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="414" selection-end="414" vertical-scroll-proportion="0.0">
+        <state line="26" column="5" selection-start="719" selection-end="719" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/_SavingsAccountTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="64" selection-start="454" selection-end="454" vertical-scroll-proportion="0.4822335">
+        <state line="29" column="46" selection-start="709" selection-end="709" vertical-scroll-proportion="0.68358713">
           <folding />
         </state>
       </provider>

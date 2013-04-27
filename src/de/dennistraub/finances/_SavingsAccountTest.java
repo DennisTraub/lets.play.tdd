@@ -7,33 +7,34 @@ import static org.junit.Assert.*;
 
 public class _SavingsAccountTest {
 
-    @Test
-    public void startingBalance() {
-        SavingsAccountYear account = new SavingsAccountYear(10000, 10);
-        assertEquals(10000, account.startingBalance());
+    private SavingsAccountYear newAccount() {
+        return new SavingsAccountYear(10000, 10);
     }
 
     @Test
-    public void interestRate() {
-        SavingsAccountYear account = new SavingsAccountYear(10000, 10);
-        assertEquals(10, account.interestRate());
+    public void startingBalanceMatchesConstructor() {
+        assertEquals(10000, newAccount().startingBalance());
     }
 
     @Test
-    public void endingBalance() {
-        SavingsAccountYear account = new SavingsAccountYear(10000, 10);
-        assertEquals(11000, account.endingBalance());
+    public void interestRateMatchesConstructor() {
+        assertEquals(10, newAccount().interestRate());
     }
 
     @Test
-    public void nextYearsStartingBalanceShouldEqualThisYearsEndingBalance() {
-        SavingsAccountYear thisYear = new SavingsAccountYear(10000, 10);
+    public void endingBalanceAppliesInterestRate() {
+        assertEquals(11000, newAccount().endingBalance());
+    }
+
+    @Test
+    public void nextYearsStartingBalanceEqualsThisYearsEndingBalance() {
+        SavingsAccountYear thisYear = newAccount();
         assertEquals(thisYear.nextYear().startingBalance(), thisYear.endingBalance());
     }
 
     @Test
     public void nextYearsInterestRateEqualsThisYearsInterestRate() {
-        SavingsAccountYear thisYear = new SavingsAccountYear(10000, 10);
+        SavingsAccountYear thisYear = newAccount();
         assertEquals(thisYear.interestRate(), thisYear.nextYear().interestRate());
     }
 }
