@@ -1,14 +1,14 @@
 /* Copyright 2013 by Dennis Traub */
 package de.dennistraub.finances;
 
-public class SavingsAccountYear {
+public class StockMarketYear {
     private int startingBalance;
     private int startingPrincipal;
     private int interestRate;
     private int totalWithdrawals;
     private double taxRate;
 
-    public SavingsAccountYear(int startingBalance, int startingPrincipal, int interestRate, double taxRate) {
+    public StockMarketYear(int startingBalance, int startingPrincipal, int interestRate, double taxRate) {
         this.startingBalance = startingBalance;
         this.startingPrincipal = startingPrincipal;
         this.interestRate = interestRate;
@@ -37,8 +37,8 @@ public class SavingsAccountYear {
         return Math.max(0, result);
     }
 
-    public SavingsAccountYear nextYear() {
-        return new SavingsAccountYear(endingBalance(), startingPrincipal, interestRate(), taxRate);
+    public StockMarketYear nextYear() {
+        return new StockMarketYear(endingBalance(), startingPrincipal, interestRate(), taxRate);
     }
 
     public void withdraw(int amount) {
@@ -60,7 +60,7 @@ public class SavingsAccountYear {
     }
 
     public int endingCapitalGains() {
-        return startingCapitalGains() + interestEarned();
+        return endingBalance() - endingPrincipal();
     }
 
     public int totalWithdrawn() {

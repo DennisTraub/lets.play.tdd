@@ -7,19 +7,19 @@ import static org.junit.Assert.assertEquals;
 
 public class when_next_year_is_retrieved {
 
-    private SavingsAccountYear newSUT() {
-        return new SavingsAccountYear(10000, 7000, 10, .25);
+    private StockMarketYear newSUT() {
+        return new StockMarketYear(10000, 7000, 10, .25);
     }
 
     @Test
     public void starting_balance_equals_this_years_ending_balance() {
-        SavingsAccountYear thisYear = newSUT();
+        StockMarketYear thisYear = newSUT();
         assertEquals(thisYear.nextYear().startingBalance(), thisYear.endingBalance());
     }
 
     @Test
     public void interest_rate_equals_this_years_interest_rate() {
-        SavingsAccountYear thisYear = newSUT();
+        StockMarketYear thisYear = newSUT();
         assertEquals(thisYear.interestRate(), thisYear.nextYear().interestRate());
     }
 }

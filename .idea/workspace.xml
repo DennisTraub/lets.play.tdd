@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="926a5211-e074-461a-9591-b2260104d88d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/dennistraub/finances/SavingsAccountYear.java" afterPath="$PROJECT_DIR$/src/de/dennistraub/finances/SavingsAccountYear.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/dennistraub/finances/when_a_savings_account_year_is_created.java" afterPath="$PROJECT_DIR$/src/de/dennistraub/finances/when_a_savings_account_year_is_created.java" />
+      <change type="MOVED" beforePath="C:\dev\workspace\lets.play.tdd\src\de\dennistraub\finances\SavingsAccountYear.java" afterPath="$PROJECT_DIR$/src/de/dennistraub/finances/StockMarketYear.java" />
+      <change type="MOVED" beforePath="C:\dev\workspace\lets.play.tdd\src\de\dennistraub\finances\when_a_savings_account_year_is_created.java" afterPath="$PROJECT_DIR$/src/de/dennistraub/finances/when_a_stock_market_year_is_created.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/dennistraub/finances/when_next_year_is_retrieved.java" afterPath="$PROJECT_DIR$/src/de/dennistraub/finances/when_next_year_is_retrieved.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/dennistraub/finances/when_withdrawing_funds.java" afterPath="$PROJECT_DIR$/src/de/dennistraub/finances/when_withdrawing_funds.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/dennistraub/finances/when_withdrawing_more_than_principal.java" afterPath="$PROJECT_DIR$/src/de/dennistraub/finances/when_withdrawing_more_than_principal.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="LetsPlayTdd.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -19,14 +20,14 @@
     <file path="/_SavingsAccountTest.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367071940899" ignored="false" />
     <file path="/Main.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367069931086" ignored="false" />
     <file path="/scratchpad.txt" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367069242385" ignored="false" />
-    <file path="/SavingsAccountYear.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367088303817" ignored="false" />
+    <file path="/SavingsAccountYear.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367089072174" ignored="false" />
     <file path="/_SavingsAccountYearTest.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367076589483" ignored="false" />
     <file path="/_SavingsAccountYearConstructor.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367081522804" ignored="false" />
     <file path="/When_retrieving_next_year.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367082002887" ignored="false" />
-    <file path="/when_a_savings_account_year_is_created.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367088326028" ignored="false" />
+    <file path="/when_a_savings_account_year_is_created.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367088963848" ignored="false" />
     <file path="/when_withdrawing_capital_gains.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367082775134" ignored="false" />
     <file path="/when_withdrawing_funds.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367088312011" ignored="false" />
-    <file path="/when_withdrawing_more_than_principal.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367088358249" ignored="false" />
+    <file path="/when_withdrawing_more_than_principal.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367088608668" ignored="false" />
     <file path="/when_next_year_is_retrieved.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367088391162" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -98,10 +99,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SavingsAccountYear.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/SavingsAccountYear.java">
+      <file leaf-file-name="StockMarketYear.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/StockMarketYear.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="34" selection-start="1837" selection-end="1837" vertical-scroll-proportion="0.75771606">
+            <state line="62" column="50" selection-start="1879" selection-end="1879" vertical-scroll-proportion="0.8194444">
               <folding />
             </state>
           </provider>
@@ -125,8 +126,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/scratchpad.txt" />
-        <option value="$PROJECT_DIR$/src/de/dennistraub/finances/_SavingsAccountTest.java" />
         <option value="$PROJECT_DIR$/src/de/dennistraub/finances/_SavingsAccountYearTest.java" />
         <option value="$PROJECT_DIR$/src/de/dennistraub/finances/_SavingsAccountYearConstructor.java" />
         <option value="$PROJECT_DIR$/src/de/dennistraub/finances/_WithdrawFromSavingsAccount.java" />
@@ -137,10 +136,12 @@
         <option value="$PROJECT_DIR$/src/de/dennistraub/finances/_SavingsAccount_CapitalGainsTax.java" />
         <option value="$PROJECT_DIR$/src/de/dennistraub/finances/when_withdrawing_capital_gains.java" />
         <option value="$PROJECT_DIR$/src/de/dennistraub/finances/when_withdrawing_funds.java" />
-        <option value="$PROJECT_DIR$/src/de/dennistraub/finances/when_a_savings_account_year_is_created.java" />
+        <option value="$PROJECT_DIR$/src/de/dennistraub/finances/when_next_year_is_retrieved.java" />
         <option value="$PROJECT_DIR$/src/de/dennistraub/finances/when_withdrawing_more_than_principal.java" />
         <option value="$PROJECT_DIR$/src/de/dennistraub/finances/SavingsAccountYear.java" />
-        <option value="$PROJECT_DIR$/src/de/dennistraub/finances/when_next_year_is_retrieved.java" />
+        <option value="$PROJECT_DIR$/src/de/dennistraub/finances/when_a_savings_account_year_is_created.java" />
+        <option value="$PROJECT_DIR$/src/de/dennistraub/finances/when_a_stock_market_year_is_created.java" />
+        <option value="$PROJECT_DIR$/src/de/dennistraub/finances/StockMarketYear.java" />
       </list>
     </option>
   </component>
@@ -443,7 +444,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16615067" sideWeight="0.7693169" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23068309" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23068309" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -516,21 +517,21 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/when_a_savings_account_year_is_created.java">
+    <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/when_a_stock_market_year_is_created.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/SavingsAccountYear.java">
+    <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/StockMarketYear.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="59" column="0" selection-start="1864" selection-end="1864" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/SavingsAccountYear.java">
+    <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/StockMarketYear.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="22" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0">
           <folding />
@@ -544,41 +545,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/when_withdrawing_funds.java">
+    <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/when_a_stock_market_year_is_created.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="47" selection-start="1124" selection-end="1124" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="7" column="32" selection-start="173" selection-end="173" vertical-scroll-proportion="0.035755478">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/when_withdrawing_more_than_principal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="46" selection-start="1375" selection-end="1375" vertical-scroll-proportion="0.0">
+        <state line="52" column="25" selection-start="1565" selection-end="1565" vertical-scroll-proportion="1.1395617">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/when_a_savings_account_year_is_created.java">
+    <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/when_withdrawing_funds.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="51" selection-start="1162" selection-end="1162" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="39" column="47" selection-start="1106" selection-end="1106" vertical-scroll-proportion="0.8027682">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/when_next_year_is_retrieved.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="83" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0">
+        <state line="16" column="83" selection-start="497" selection-end="497" vertical-scroll-proportion="0.3114754">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/SavingsAccountYear.java">
+    <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/StockMarketYear.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="34" selection-start="1837" selection-end="1837" vertical-scroll-proportion="0.75771606">
+        <state line="62" column="50" selection-start="1879" selection-end="1879" vertical-scroll-proportion="0.8194444">
           <folding />
         </state>
       </provider>

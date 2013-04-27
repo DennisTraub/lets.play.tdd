@@ -1,15 +1,14 @@
 /* Copyright 2013 by Dennis Traub */
 package de.dennistraub.finances;
 
-import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class when_a_savings_account_year_is_created {
+public class when_a_stock_market_year_is_created {
 
-    private SavingsAccountYear newSUT() {
-        return new SavingsAccountYear(10000, 7000, 10, .25);
+    private StockMarketYear newSUT() {
+        return new StockMarketYear(10000, 7000, 10, .25);
     }
 
     @Test
@@ -39,7 +38,7 @@ public class when_a_savings_account_year_is_created {
 
     @Test
     public void ending_capital_gains_includes_earned_interest() {
-        SavingsAccountYear year = newSUT();
+        StockMarketYear year = newSUT();
         assertEquals(3000, year.startingCapitalGains());
         assertEquals(4000, year.endingCapitalGains());
     }
