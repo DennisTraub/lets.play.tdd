@@ -1,7 +1,1 @@
-Change SavingsAccount --> SavingsAccountYear
-Ending balance, other?
 Capital gains
-Replace deposit/withdrawal with transferring between accounts
-
-Refactor SavingsAccountYear to reconcile nextYear() with endingBalance()
-Get rid of empty constructor

@@ -5,7 +5,7 @@
     <ignored path="LetsPlayTdd.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Something.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367063481171" ignored="false" />
-    <file path="/_TestSomething.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367070315144" ignored="false" />
+    <file path="/_TestSomething.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367070676277" ignored="false" />
     <file path="/fragment.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367063966616" ignored="false" />
     <file path="/Dummy.txt" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367063904412" ignored="false" />
     <file path="/SavingsAccount.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367070344400" ignored="false" />
@@ -87,25 +87,25 @@
       <file leaf-file-name="scratchpad.txt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scratchpad.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="21" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0">
+            <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_SavingsAccountTest.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_SavingsAccountTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/_SavingsAccountTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="77" selection-start="1008" selection-end="1008" vertical-scroll-proportion="0.0">
+            <state line="17" column="64" selection-start="454" selection-end="454" vertical-scroll-proportion="0.4822335">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SavingsAccountYear.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SavingsAccountYear.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/SavingsAccountYear.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="34" selection-start="410" selection-end="410" vertical-scroll-proportion="0.3790186">
+            <state line="15" column="0" selection-start="414" selection-end="414" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -126,10 +126,10 @@
         <option value="$PROJECT_DIR$/src/de/dennistraub/lptdd/_TestSomething.java" />
         <option value="$PROJECT_DIR$/src/de/dennistraub/lptdd/_SavingsAccountTest.java" />
         <option value="$PROJECT_DIR$/src/de/dennistraub/finances/SavingsAccount.java" />
-        <option value="$PROJECT_DIR$/scratchpad.txt" />
         <option value="$PROJECT_DIR$/src/de/dennistraub/finances/Main.java" />
-        <option value="$PROJECT_DIR$/src/de/dennistraub/finances/_SavingsAccountTest.java" />
+        <option value="$PROJECT_DIR$/scratchpad.txt" />
         <option value="$PROJECT_DIR$/src/de/dennistraub/finances/SavingsAccountYear.java" />
+        <option value="$PROJECT_DIR$/src/de/dennistraub/finances/_SavingsAccountTest.java" />
       </list>
     </option>
   </component>
@@ -427,8 +427,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920536" sideWeight="0.6721311" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20949432" sideWeight="0.70548713" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29451287" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16511868" sideWeight="0.70548713" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29451287" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -517,28 +517,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scratchpad.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="21" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="68" selection-start="314" selection-end="314" vertical-scroll-proportion="0.22019868">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/_SavingsAccountTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="77" selection-start="1008" selection-end="1008" vertical-scroll-proportion="0.0">
+        <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/SavingsAccountYear.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="34" selection-start="410" selection-end="410" vertical-scroll-proportion="0.3790186">
+        <state line="15" column="0" selection-start="414" selection-end="414" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/_SavingsAccountTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="64" selection-start="454" selection-end="454" vertical-scroll-proportion="0.4822335">
           <folding />
         </state>
       </provider>
