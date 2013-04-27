@@ -26,13 +26,13 @@ public class SavingsAccountYear {
     }
 
     public int endingBalance() {
-        int result = startingBalance;
-        result -= totalWithdrawn;
-        return result + (result * interestRate / 100);
+        int endingBeforeInterest = startingBalance - totalWithdrawn;
+        return endingBeforeInterest + (endingBeforeInterest * interestRate / 100);
     }
 
     public int endingPrincipal() {
-        return startingPrincipal() - totalWithdrawn;
+        int result = startingPrincipal() - totalWithdrawn;
+        return Math.max(result, 0);
     }
 
     public SavingsAccountYear nextYear() {

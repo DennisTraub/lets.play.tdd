@@ -60,6 +60,14 @@ public class _SavingsAccountTest {
     }
 
     @Test
+    public void endingPrincipalNeverGoesBelowZero() {
+        SavingsAccountYear year = new SavingsAccountYear(10000, 7000, 10);
+        assertEquals("starting principal", 3000, year.startingPrincipal());
+        year.withdraw(4000);
+        assertEquals("ending principal", 0, year.endingPrincipal());
+    }
+
+    @Test
     public void multipalWithdrawalsInAYear() {
         // TODO
     }
