@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="926a5211-e074-461a-9591-b2260104d88d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/dennistraub/finances/StockMarketYear.java" afterPath="$PROJECT_DIR$/src/de/dennistraub/finances/StockMarketYear.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/dennistraub/finances/TaxRate.java" afterPath="$PROJECT_DIR$/src/de/dennistraub/finances/TaxRate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/dennistraub/finances/_StockMarketYearTest.java" afterPath="$PROJECT_DIR$/src/de/dennistraub/finances/_StockMarketYearTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/dennistraub/finances/_TaxRateTest.java" afterPath="$PROJECT_DIR$/src/de/dennistraub/finances/_TaxRateTest.java" />
     </list>
     <ignored path="LetsPlayTdd.iws" />
@@ -15,7 +18,7 @@
     <file path="/_SavingsAccountTest.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367071940899" ignored="false" />
     <file path="/Main.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367069931086" ignored="false" />
     <file path="/scratchpad.txt" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367069242385" ignored="false" />
-    <file path="/SavingsAccountYear.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367095324373" ignored="false" />
+    <file path="/SavingsAccountYear.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367097908239" ignored="false" />
     <file path="/_SavingsAccountYearTest.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367076589483" ignored="false" />
     <file path="/_SavingsAccountYearConstructor.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367081522804" ignored="false" />
     <file path="/When_retrieving_next_year.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367082002887" ignored="false" />
@@ -25,10 +28,10 @@
     <file path="/when_withdrawing_more_than_principal.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367088608668" ignored="false" />
     <file path="/when_next_year_is_retrieved.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367089520962" ignored="false" />
     <file path="/when_a_stock_market_year_is_created.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367090143287" ignored="false" />
-    <file path="/StockMarketYear.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367089714581" ignored="false" />
-    <file path="/_StockMarketYearTest.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367095255686" ignored="false" />
-    <file path="/_TaxRateTest.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367097767878" ignored="false" />
-    <file path="/TaxRate.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367097613579" ignored="false" />
+    <file path="/StockMarketYear.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367097900439" ignored="false" />
+    <file path="/_StockMarketYearTest.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367097922927" ignored="false" />
+    <file path="/_TaxRateTest.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367098138767" ignored="false" />
+    <file path="/TaxRate.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367098198912" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,20 +102,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TaxRate.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="TaxRate.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/TaxRate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="51" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0">
+            <state line="24" column="30" selection-start="513" selection-end="513" vertical-scroll-proportion="0.36611196">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_TaxRateTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_TaxRateTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/_TaxRateTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="42" selection-start="378" selection-end="378" vertical-scroll-proportion="0.40242058">
+            <state line="27" column="46" selection-start="735" selection-end="735" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StockMarketYear.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/StockMarketYear.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="68" column="41" selection-start="2061" selection-end="2061" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_StockMarketYearTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/_StockMarketYearTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="50" selection-start="963" selection-end="963" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#newYear#0;class#_StockMarketYearTest#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -147,10 +171,10 @@
         <option value="$PROJECT_DIR$/src/de/dennistraub/finances/when_withdrawing_more_than_principal.java" />
         <option value="$PROJECT_DIR$/src/de/dennistraub/finances/when_a_stock_market_year_is_created.java" />
         <option value="$PROJECT_DIR$/src/de/dennistraub/finances/when_withdrawing_funds.java" />
-        <option value="$PROJECT_DIR$/src/de/dennistraub/finances/_StockMarketYearTest.java" />
         <option value="$PROJECT_DIR$/src/de/dennistraub/finances/StockMarketYear.java" />
-        <option value="$PROJECT_DIR$/src/de/dennistraub/finances/TaxRate.java" />
+        <option value="$PROJECT_DIR$/src/de/dennistraub/finances/_StockMarketYearTest.java" />
         <option value="$PROJECT_DIR$/src/de/dennistraub/finances/_TaxRateTest.java" />
+        <option value="$PROJECT_DIR$/src/de/dennistraub/finances/TaxRate.java" />
       </list>
     </option>
   </component>
@@ -232,18 +256,19 @@
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="OverrideImplement.combined" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -454,7 +479,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16615067" sideWeight="0.7693169" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23068309" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23068309" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -547,9 +572,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/StockMarketYear.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="41" selection-start="2061" selection-end="2061" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/_StockMarketYearTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="53" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0">
+        <state line="28" column="50" selection-start="963" selection-end="963" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#newYear#0;class#_StockMarketYearTest#0" expanded="false" />
@@ -557,23 +589,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/StockMarketYear.java">
+    <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/_TaxRateTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="0" selection-start="1853" selection-end="1853" vertical-scroll-proportion="0.0">
+        <state line="27" column="46" selection-start="735" selection-end="735" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/TaxRate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="51" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/_TaxRateTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="42" selection-start="378" selection-end="378" vertical-scroll-proportion="0.40242058">
+        <state line="24" column="30" selection-start="513" selection-end="513" vertical-scroll-proportion="0.36611196">
           <folding />
         </state>
       </provider>

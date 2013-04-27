@@ -10,7 +10,7 @@ public class _StockMarketYearTest {
     public static final int STARTING_BALANCE = 10000;
     public static final int STARTING_PRINCIPAL = 3000;
     public static final int INTEREST_RATE = 10;
-    public static final double CAPITAL_GAINS_TAX_RATE = 0.25;
+    public static final TaxRate CAPITAL_GAINS_TAX_RATE = new TaxRate(25);
 
     private StockMarketYear newYear() {
         return new StockMarketYear(
@@ -26,7 +26,7 @@ public class _StockMarketYearTest {
         assertEquals(STARTING_BALANCE, year.startingBalance());
         assertEquals(STARTING_PRINCIPAL, year.startingPrincipal());
         assertEquals(INTEREST_RATE, year.interestRate());
-        assertEquals(CAPITAL_GAINS_TAX_RATE, year.capitalGainsTaxRate(), 0.001);
+        assertEquals(CAPITAL_GAINS_TAX_RATE.rate(), year.capitalGainsTaxRate(), 0.001);
     }
 
     @Test
