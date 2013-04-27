@@ -3,13 +3,13 @@ package de.dennistraub.finances;
 
 public class SavingsAccountYear {
     private int startingBalance;
-    private int capitalGainsAmount;
+    private int startingPrincipal;
     private int interestRate;
     private int totalWithdrawn;
 
-    public SavingsAccountYear(int startingBalance, int capitalGainsAmount, int interestRate) {
+    public SavingsAccountYear(int startingBalance, int startingPrincipal, int interestRate) {
         this.startingBalance = startingBalance;
-        this.capitalGainsAmount = capitalGainsAmount;
+        this.startingPrincipal = startingPrincipal;
         this.interestRate = interestRate;
     }
 
@@ -18,7 +18,7 @@ public class SavingsAccountYear {
     }
 
     public int startingPrincipal() {
-        return startingBalance - capitalGainsAmount;
+        return startingPrincipal;
     }
 
     public int interestRate() {
@@ -40,7 +40,7 @@ public class SavingsAccountYear {
     }
 
     public SavingsAccountYear nextYear() {
-        return new SavingsAccountYear(endingBalance(), capitalGainsAmount, interestRate());
+        return new SavingsAccountYear(endingBalance(), startingPrincipal, interestRate());
     }
 
     public void withdraw(int amount) {
