@@ -36,7 +36,7 @@ public class SavingsAccountYear {
 
     public int endingPrincipal() {
         int result = startingPrincipal() - totalWithdrawn();
-        return Math.max(result, 0);
+        return Math.max(0, result);
     }
 
     public SavingsAccountYear nextYear() {
@@ -45,5 +45,10 @@ public class SavingsAccountYear {
 
     public void withdraw(int amount) {
         this.totalWithdrawn += amount;
+    }
+
+    public int capitalGainsWithdrawn() {
+        int result = (startingPrincipal() - totalWithdrawn()) * -1;
+        return Math.max(0, result);
     }
 }

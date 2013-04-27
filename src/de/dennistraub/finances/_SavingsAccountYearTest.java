@@ -75,6 +75,15 @@ public class _SavingsAccountYearTest {
         assertEquals(3000, year.totalWithdrawn());
     }
 
+    @Test
+    public void capitalGainsWithdrawn() {
+        SavingsAccountYear year = new SavingsAccountYear(10000, 7000, 10);
+        year.withdraw(1000);
+        assertEquals(0, year.capitalGainsWithdrawn());
+        year.withdraw(3000);
+        assertEquals(1000, year.capitalGainsWithdrawn());
+    }
+
 //    @Test
 //    public void withdrawingMoreThanPrincipalIncursCapitalGainsTax() {
 //        SavingsAccountYear year = new SavingsAccountYear(10000, 7000, 10);
