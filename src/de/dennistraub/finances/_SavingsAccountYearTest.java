@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class _SavingsAccountTest {
+public class _SavingsAccountYearTest {
 
     private SavingsAccountYear newAccount() {
         return new SavingsAccountYear(10000, 10000, 10);
@@ -69,7 +69,10 @@ public class _SavingsAccountTest {
 
     @Test
     public void multipalWithdrawalsInAYear() {
-        // TODO
+        SavingsAccountYear year = new SavingsAccountYear(10000, 7000, 10);
+        year.withdraw(1000);
+        year.withdraw(2000);
+        assertEquals(7700, year.endingBalance());
     }
 
 //    @Test

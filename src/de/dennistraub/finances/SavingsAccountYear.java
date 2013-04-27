@@ -40,7 +40,7 @@ public class SavingsAccountYear {
     }
 
     public void withdraw(int amount) {
-        this.totalWithdrawn = amount;
+        this.totalWithdrawn += amount;
     }
 
 
