@@ -25,23 +25,25 @@ public class SavingsAccountYear {
         return interestRate;
     }
 
+    public int totalWithdrawn() {
+        return totalWithdrawn;
+    }
+
     public int endingBalance() {
-        int endingBeforeInterest = startingBalance - totalWithdrawn;
-        return endingBeforeInterest + (endingBeforeInterest * interestRate / 100);
+        int endingBeforeInterest = startingBalance() - totalWithdrawn();
+        return endingBeforeInterest + (endingBeforeInterest * interestRate() / 100);
     }
 
     public int endingPrincipal() {
-        int result = startingPrincipal() - totalWithdrawn;
+        int result = startingPrincipal() - totalWithdrawn();
         return Math.max(result, 0);
     }
 
     public SavingsAccountYear nextYear() {
-        return new SavingsAccountYear(this.endingBalance(), capitalGainsAmount, interestRate);
+        return new SavingsAccountYear(endingBalance(), capitalGainsAmount, interestRate());
     }
 
     public void withdraw(int amount) {
         this.totalWithdrawn += amount;
     }
-
-
 }
