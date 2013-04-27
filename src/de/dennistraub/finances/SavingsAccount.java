@@ -2,7 +2,7 @@
 package de.dennistraub.finances;
 
 public class SavingsAccount {
-    int balance = 0;
+    private int balance = 0;
 
     public void deposit(int amount) {
         balance += amount;
