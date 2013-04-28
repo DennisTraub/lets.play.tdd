@@ -4,11 +4,11 @@ package de.dennistraub.finances;
 public class StockMarketYear {
     private int startingBalance;
     private int startingPrincipal;
-    private int interestRate;
+    private InterestRate interestRate;
     private int totalWithdrawals;
     private TaxRate capitalGainsTaxRate;
 
-    public StockMarketYear(int startingBalance, int startingPrincipal, int interestRate, TaxRate capitalGainsTaxRate) {
+    public StockMarketYear(int startingBalance, int startingPrincipal, InterestRate interestRate, TaxRate capitalGainsTaxRate) {
         this.startingBalance = startingBalance;
         this.startingPrincipal = startingPrincipal;
         this.interestRate = interestRate;
@@ -23,7 +23,7 @@ public class StockMarketYear {
         return startingPrincipal;
     }
 
-    public int interestRate() {
+    public InterestRate interestRate() {
         return interestRate;
     }
 
@@ -61,7 +61,7 @@ public class StockMarketYear {
     }
 
     public int interestEarned() {
-        return (startingBalance - totalWithdrawn()) * interestRate / 100;
+        return interestRate.interestFor(startingBalance - totalWithdrawn());
     }
 
     public TaxRate capitalGainsTaxRate() {

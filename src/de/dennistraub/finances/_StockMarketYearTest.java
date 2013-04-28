@@ -9,7 +9,7 @@ public class _StockMarketYearTest {
 
     public static final int STARTING_BALANCE = 10000;
     public static final int STARTING_PRINCIPAL = 3000;
-    public static final int INTEREST_RATE = 10;
+    public static final InterestRate INTEREST_RATE = new InterestRate(10);
     public static final TaxRate CAPITAL_GAINS_TAX_RATE = new TaxRate(25);
 
     private StockMarketYear newYear() {

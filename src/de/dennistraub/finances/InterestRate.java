@@ -1,20 +1,16 @@
 /* Copyright 2013 by Dennis Traub */
 package de.dennistraub.finances;
 
-public class TaxRate {
+public class InterestRate {
 
     private double rate;
 
-    public TaxRate(double rateAsPercentage) {
+    public InterestRate(int rateAsPercentage) {
         this.rate = rateAsPercentage / 100.0;
     }
 
-    public int simpleTaxFor(int amount) {
-        return (int)(rate * amount);
-    }
-
-    public int compoundTaxFor(int amount) {
-        return (int)(amount / (1 - rate) - amount);
+    public int interestFor(int amount) {
+        return (int)(amount * rate);
     }
 
     @Override
@@ -27,9 +23,9 @@ public class TaxRate {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        TaxRate taxRate = (TaxRate) o;
+        InterestRate that = (InterestRate) o;
 
-        if (Double.compare(taxRate.rate, rate) != 0) return false;
+        if (Double.compare(that.rate, rate) != 0) return false;
 
         return true;
     }
