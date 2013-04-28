@@ -7,8 +7,8 @@ import static org.junit.Assert.assertEquals;
 
 public class _StockMarketYearTest {
 
-    public static final int STARTING_BALANCE = 10000;
-    public static final int STARTING_PRINCIPAL = 3000;
+    public static final Dollars STARTING_BALANCE = new Dollars(10000);
+    public static final Dollars STARTING_PRINCIPAL = new Dollars(3000);
     public static final InterestRate INTEREST_RATE = new InterestRate(10);
     public static final TaxRate CAPITAL_GAINS_TAX_RATE = new TaxRate(25);
 
@@ -71,8 +71,8 @@ public class _StockMarketYearTest {
     public void values_carry_over_to_next_year() {
         StockMarketYear thisYear = newYear();
         StockMarketYear nextYear = thisYear.nextYear();
-        assertEquals(thisYear.endingBalance(), nextYear.startingBalance());
-        assertEquals(thisYear.endingPrincipal(), nextYear.startingPrincipal());
+        assertEquals(thisYear.endingBalance(), nextYear.startingBalance().amount());
+        assertEquals(thisYear.endingPrincipal(), nextYear.startingPrincipal().amount());
         assertEquals(thisYear.interestRate(), nextYear.interestRate());
         assertEquals(thisYear.capitalGainsTaxRate(), nextYear.capitalGainsTaxRate());
     }
