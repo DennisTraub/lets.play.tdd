@@ -10,7 +10,9 @@ public class _TaxRateTest {
     @Test
     public void compound_tax_applies_tax_rate_to_dollars() {
         TaxRate taxRate = new TaxRate(25);
-        assertEquals(333, taxRate.compoundTaxFor(new Dollars(1000)).amount());
+        assertEquals(
+                new Dollars(333), taxRate.compoundTaxFor(new Dollars(1000))
+        );
     }
 
     @Test

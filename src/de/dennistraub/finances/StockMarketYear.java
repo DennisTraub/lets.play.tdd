@@ -58,7 +58,7 @@ public class StockMarketYear {
 
     private Dollars capitalGainsWithdrawn() {
         Dollars principalMinusWithdrawals = startingPrincipal().subtract(totalWithdrawals);
-        Dollars result = principalMinusWithdrawals.multiplyBy(-1);
+        Dollars result = principalMinusWithdrawals.multiplyWith(-1);
         if (result.amount() >= 0)
             return result;
         else
@@ -74,8 +74,8 @@ public class StockMarketYear {
     }
 
     public Dollars interestEarned() {
-        int interest = interestRate.interestOn(startingBalance.subtract(totalWithdrawn()).amount());
-        return new Dollars(interest);
+        Dollars interest = interestRate.interestOn(startingBalance.subtract(totalWithdrawn()));
+        return interest;
     }
 
     public TaxRate capitalGainsTaxRate() {

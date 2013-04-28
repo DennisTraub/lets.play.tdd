@@ -26,7 +26,7 @@ public class _DollarsTest {
     @Test
     public void multiplication() {
         Dollars dollars = new Dollars(3000);
-        Dollars product = dollars.multiplyBy(2);
+        Dollars product = dollars.multiplyWith(2);
         assertEquals(6000, product.amount());
     }
 

@@ -21,8 +21,8 @@ public class Dollars {
         return new Dollars(this.amount() - subtrahend.amount());
     }
 
-    public Dollars multiplyBy(int factor) {
-        return new Dollars(this.amount * factor);
+    public Dollars multiplyWith(double factor) {
+        return new Dollars((int)(this.amount * factor));
     }
 
     public Dollars divideBy(double divisor) {
