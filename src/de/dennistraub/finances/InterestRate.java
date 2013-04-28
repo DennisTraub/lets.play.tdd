@@ -9,7 +9,7 @@ public class InterestRate {
         this.rate = rateAsPercentage / 100.0;
     }
 
-    public int interestFor(int amount) {
+    public int interestOn(int amount) {
         return (int)(amount * rate);
     }
 

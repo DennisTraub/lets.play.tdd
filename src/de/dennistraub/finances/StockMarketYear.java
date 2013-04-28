@@ -28,15 +28,11 @@ public class StockMarketYear {
     }
 
     public int endingBalance() {
-        return startingBalance()
-                - totalWithdrawals
-                - capitalGainsTaxIncurred()
-                + interestEarned();
+        return startingBalance() - totalWithdrawn() + interestEarned();
     }
 
     public int endingPrincipal() {
-        int result = startingPrincipal() - totalWithdrawals;
-        return Math.max(0, result);
+        return Math.max(0, startingPrincipal() - totalWithdrawals);
     }
 
     public StockMarketYear nextYear() {
@@ -48,8 +44,7 @@ public class StockMarketYear {
     }
 
     private int capitalGainsWithdrawn() {
-        int result = (startingPrincipal() - totalWithdrawals) * -1;
-        return Math.max(0, result);
+        return Math.max(0, (startingPrincipal() - totalWithdrawals) * -1);
     }
 
     public int capitalGainsTaxIncurred() {
@@ -61,7 +56,7 @@ public class StockMarketYear {
     }
 
     public int interestEarned() {
-        return interestRate.interestFor(startingBalance - totalWithdrawn());
+        return interestRate.interestOn(startingBalance - totalWithdrawn());
     }
 
     public TaxRate capitalGainsTaxRate() {

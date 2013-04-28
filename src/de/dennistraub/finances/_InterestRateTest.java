@@ -10,7 +10,7 @@ public class _InterestRateTest {
     @Test
     public void calculate_interest_for_amount() {
         InterestRate rate = new InterestRate(10);
-        assertEquals(100, rate.interestFor(1000));
+        assertEquals(100, rate.interestOn(1000));
     }
 
     @Test
