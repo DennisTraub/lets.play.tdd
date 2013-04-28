@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="926a5211-e074-461a-9591-b2260104d88d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/dennistraub/finances/StockMarketYear.java" afterPath="$PROJECT_DIR$/src/de/dennistraub/finances/StockMarketYear.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/dennistraub/finances/_StockMarketYearTest.java" afterPath="$PROJECT_DIR$/src/de/dennistraub/finances/_StockMarketYearTest.java" />
     </list>
     <ignored path="LetsPlayTdd.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -16,7 +15,7 @@
     <file path="/_SavingsAccountTest.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367071940899" ignored="false" />
     <file path="/Main.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367069931086" ignored="false" />
     <file path="/scratchpad.txt" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367135541564" ignored="false" />
-    <file path="/SavingsAccountYear.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367141387049" ignored="false" />
+    <file path="/SavingsAccountYear.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367142325973" ignored="false" />
     <file path="/_SavingsAccountYearTest.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367076589483" ignored="false" />
     <file path="/_SavingsAccountYearConstructor.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367081522804" ignored="false" />
     <file path="/When_retrieving_next_year.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367082002887" ignored="false" />
@@ -26,7 +25,7 @@
     <file path="/when_withdrawing_more_than_principal.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367088608668" ignored="false" />
     <file path="/when_next_year_is_retrieved.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367089520962" ignored="false" />
     <file path="/when_a_stock_market_year_is_created.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367090143287" ignored="false" />
-    <file path="/StockMarketYear.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367141178347" ignored="false" />
+    <file path="/StockMarketYear.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367142268306" ignored="false" />
     <file path="/_StockMarketYearTest.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367141295522" ignored="false" />
     <file path="/_TaxRateTest.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367098138767" ignored="false" />
     <file path="/TaxRate.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367098198912" ignored="false" />
@@ -107,7 +106,7 @@
       <file leaf-file-name="StockMarketYear.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/StockMarketYear.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="45" selection-start="1282" selection-end="1282" vertical-scroll-proportion="-0.055555556">
+            <state line="64" column="82" selection-start="1990" selection-end="1990" vertical-scroll-proportion="0.595679">
               <folding />
             </state>
           </provider>
@@ -116,7 +115,7 @@
       <file leaf-file-name="_StockMarketYearTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/_StockMarketYearTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="86" selection-start="2743" selection-end="2743" vertical-scroll-proportion="0.0">
+            <state line="70" column="16" selection-start="2435" selection-end="2435" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -604,7 +603,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/_StockMarketYearTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="86" selection-start="2743" selection-end="2743" vertical-scroll-proportion="0.0">
+        <state line="70" column="16" selection-start="2435" selection-end="2435" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -613,7 +612,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/StockMarketYear.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="45" selection-start="1282" selection-end="1282" vertical-scroll-proportion="-0.055555556">
+        <state line="64" column="82" selection-start="1990" selection-end="1990" vertical-scroll-proportion="0.595679">
           <folding />
         </state>
       </provider>
