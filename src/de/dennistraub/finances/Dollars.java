@@ -25,8 +25,8 @@ public class Dollars {
         return new Dollars(this.amount * factor);
     }
 
-    public Dollars divideBy(int divisor) {
-        return new Dollars((this.amount() / divisor));
+    public Dollars divideBy(double divisor) {
+        return new Dollars((int)(this.amount() / divisor));
     }
 
     @Override
@@ -50,4 +50,5 @@ public class Dollars {
     public int hashCode() {
         return amount;
     }
+
 }

@@ -66,8 +66,7 @@ public class StockMarketYear {
     }
 
     public Dollars capitalGainsTaxIncurred() {
-        int taxAmount = capitalGainsTaxRate.compoundTaxFor(capitalGainsWithdrawn().amount());
-        return new Dollars(taxAmount);
+        return capitalGainsTaxRate.compoundTaxFor(capitalGainsWithdrawn());
     }
 
     public Dollars totalWithdrawn() {

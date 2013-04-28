@@ -8,15 +8,9 @@ import static org.junit.Assert.*;
 public class _TaxRateTest {
 
     @Test
-    public void simpleTaxAppliesTaxRateToAmount() {
+    public void compound_tax_applies_tax_rate_to_dollars() {
         TaxRate taxRate = new TaxRate(25);
-        assertEquals(250, taxRate.simpleTaxFor(1000));
-    }
-
-    @Test
-    public void compoundTaxIsTheAmountOfTaxThatIsIncurredIfYouPayTaxOnTax() {
-        TaxRate taxRate = new TaxRate(25);
-        assertEquals(333, taxRate.compoundTaxFor(1000));
+        assertEquals(333, taxRate.compoundTaxFor(new Dollars(1000)).amount());
     }
 
     @Test

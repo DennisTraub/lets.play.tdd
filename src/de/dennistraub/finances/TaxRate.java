@@ -9,12 +9,8 @@ public class TaxRate {
         this.rate = rateAsPercentage / 100.0;
     }
 
-    public int simpleTaxFor(int amount) {
-        return (int)(rate * amount);
-    }
-
-    public int compoundTaxFor(int amount) {
-        return (int)(amount / (1 - rate) - amount);
+    public Dollars compoundTaxFor(Dollars dollars) {
+        return dollars.divideBy(1 - rate).subtract(dollars);
     }
 
     @Override
@@ -39,4 +35,5 @@ public class TaxRate {
         long temp = Double.doubleToLongBits(rate);
         return (int) (temp ^ (temp >>> 32));
     }
+
 }
