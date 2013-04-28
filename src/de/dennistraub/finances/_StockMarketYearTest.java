@@ -26,7 +26,7 @@ public class _StockMarketYearTest {
         assertEquals(STARTING_BALANCE, year.startingBalance());
         assertEquals(STARTING_PRINCIPAL, year.startingPrincipal());
         assertEquals(INTEREST_RATE, year.interestRate());
-        assertEquals(CAPITAL_GAINS_TAX_RATE.rate(), year.capitalGainsTaxRate(), 0.001);
+        assertEquals(CAPITAL_GAINS_TAX_RATE, year.capitalGainsTaxRate());
     }
 
     @Test
@@ -74,6 +74,6 @@ public class _StockMarketYearTest {
         assertEquals(thisYear.endingBalance(), nextYear.startingBalance());
         assertEquals(thisYear.endingPrincipal(), nextYear.startingPrincipal());
         assertEquals(thisYear.interestRate(), nextYear.interestRate());
-        assertEquals(thisYear.capitalGainsTaxRate(), nextYear.capitalGainsTaxRate(), 0);
+        assertEquals(thisYear.capitalGainsTaxRate(), nextYear.capitalGainsTaxRate());
     }
 }

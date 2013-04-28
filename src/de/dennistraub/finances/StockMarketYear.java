@@ -65,7 +65,7 @@ public class StockMarketYear {
         return (startingBalance - totalWithdrawn()) * interestRate / 100;
     }
 
-    public double capitalGainsTaxRate() {
-        return capitalGainsTaxRate.rate();
+    public TaxRate capitalGainsTaxRate() {
+        return capitalGainsTaxRate;
     }
 }
