@@ -21,7 +21,7 @@ public class _InterestRateTest {
         InterestRate rate1b = new InterestRate(33);
         InterestRate rate2 = new InterestRate(40);
 
-        assertEquals("33%", rate1a.toString());
+        assertEquals("33.0%", rate1a.toString());
         assertTrue(rate1a.equals(rate1b));
         assertFalse(rate1a.equals(rate2));
         assertTrue(rate1a.hashCode() == rate1b.hashCode());

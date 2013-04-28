@@ -5,8 +5,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/dennistraub/finances/Dollars.java" afterPath="$PROJECT_DIR$/src/de/dennistraub/finances/Dollars.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/dennistraub/finances/InterestRate.java" afterPath="$PROJECT_DIR$/src/de/dennistraub/finances/InterestRate.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/dennistraub/finances/StockMarketYear.java" afterPath="$PROJECT_DIR$/src/de/dennistraub/finances/StockMarketYear.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/dennistraub/finances/TaxRate.java" afterPath="$PROJECT_DIR$/src/de/dennistraub/finances/TaxRate.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/dennistraub/finances/_DollarsTest.java" afterPath="$PROJECT_DIR$/src/de/dennistraub/finances/_DollarsTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/dennistraub/finances/_InterestRateTest.java" afterPath="$PROJECT_DIR$/src/de/dennistraub/finances/_InterestRateTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/dennistraub/finances/_StockMarketYearTest.java" afterPath="$PROJECT_DIR$/src/de/dennistraub/finances/_StockMarketYearTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/dennistraub/finances/_TaxRateTest.java" afterPath="$PROJECT_DIR$/src/de/dennistraub/finances/_TaxRateTest.java" />
     </list>
     <ignored path="LetsPlayTdd.iws" />
@@ -20,7 +22,7 @@
     <file path="/_SavingsAccountTest.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367071940899" ignored="false" />
     <file path="/Main.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367069931086" ignored="false" />
     <file path="/scratchpad.txt" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367135541564" ignored="false" />
-    <file path="/SavingsAccountYear.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367144807220" ignored="false" />
+    <file path="/SavingsAccountYear.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367145141160" ignored="false" />
     <file path="/_SavingsAccountYearTest.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367076589483" ignored="false" />
     <file path="/_SavingsAccountYearConstructor.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367081522804" ignored="false" />
     <file path="/When_retrieving_next_year.java" changelist="926a5211-e074-461a-9591-b2260104d88d" time="1367082002887" ignored="false" />
@@ -108,24 +110,88 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="_StockMarketYearTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/_StockMarketYearTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="77" column="1" selection-start="3675" selection-end="3675" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Dollars.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/Dollars.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="55" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0">
+            <state line="51" column="1" selection-start="0" selection-end="1178" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TaxRate.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_DollarsTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/_DollarsTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="1" selection-start="1462" selection-end="1462" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StockMarketYear.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/StockMarketYear.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="0" selection-start="1010" selection-end="1010" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InterestRate.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/InterestRate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="1" selection-start="1041" selection-end="1041" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="method#toString#0;class#InterestRate#0" expanded="false" />
+                <element signature="method#hashCode#0;class#InterestRate#0" expanded="false" />
+                <element signature="method#equals#0;class#InterestRate#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TaxRate.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/TaxRate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="220" selection-end="220" vertical-scroll-proportion="0.3161876">
+            <state line="45" column="1" selection-start="1206" selection-end="1206" vertical-scroll-proportion="0.0">
               <folding>
+                <element signature="method#compoundTaxFor#0;class#TaxRate#0" expanded="false" />
                 <element signature="method#toString#0;class#TaxRate#0" expanded="false" />
                 <element signature="method#equals#0;class#TaxRate#0" expanded="false" />
-                <element signature="method#hashCode#0;class#TaxRate#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_InterestRateTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/_InterestRateTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="26" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_TaxRateTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/_TaxRateTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="26" selection-start="583" selection-end="583" vertical-scroll-proportion="0.6140625">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -156,12 +222,12 @@
         <option value="$PROJECT_DIR$/src/de/dennistraub/finances/when_a_stock_market_year_is_created.java" />
         <option value="$PROJECT_DIR$/src/de/dennistraub/finances/when_withdrawing_funds.java" />
         <option value="$PROJECT_DIR$/scratchpad.txt" />
-        <option value="$PROJECT_DIR$/src/de/dennistraub/finances/_DollarsTest.java" />
-        <option value="$PROJECT_DIR$/src/de/dennistraub/finances/_StockMarketYearTest.java" />
-        <option value="$PROJECT_DIR$/src/de/dennistraub/finances/TaxRate.java" />
-        <option value="$PROJECT_DIR$/src/de/dennistraub/finances/StockMarketYear.java" />
         <option value="$PROJECT_DIR$/src/de/dennistraub/finances/Dollars.java" />
+        <option value="$PROJECT_DIR$/src/de/dennistraub/finances/_DollarsTest.java" />
+        <option value="$PROJECT_DIR$/src/de/dennistraub/finances/StockMarketYear.java" />
+        <option value="$PROJECT_DIR$/src/de/dennistraub/finances/_StockMarketYearTest.java" />
         <option value="$PROJECT_DIR$/src/de/dennistraub/finances/InterestRate.java" />
+        <option value="$PROJECT_DIR$/src/de/dennistraub/finances/TaxRate.java" />
         <option value="$PROJECT_DIR$/src/de/dennistraub/finances/_InterestRateTest.java" />
         <option value="$PROJECT_DIR$/src/de/dennistraub/finances/_TaxRateTest.java" />
       </list>
@@ -475,7 +541,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16615067" sideWeight="0.7693169" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23068309" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23068309" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -550,18 +616,14 @@
     <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/StockMarketYear.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="59" column="0" selection-start="1864" selection-end="1864" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="method#endingPrincipal#0;class#StockMarketYear#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/StockMarketYear.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="22" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="method#endingPrincipal#0;class#StockMarketYear#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -572,18 +634,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/_DollarsTest.java">
+    <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/Dollars.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="50" selection-start="1230" selection-end="1230" vertical-scroll-proportion="0.8850227">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="51" column="1" selection-start="0" selection-end="1178" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/_StockMarketYearTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="38" selection-start="2529" selection-end="2529" vertical-scroll-proportion="0.7685185">
+        <state line="77" column="1" selection-start="3675" selection-end="3675" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -592,27 +652,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/StockMarketYear.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="24" selection-start="2383" selection-end="2383" vertical-scroll-proportion="0.0">
+        <state line="34" column="0" selection-start="1010" selection-end="1010" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/_DollarsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="1" selection-start="1462" selection-end="1462" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="method#endingPrincipal#0;class#StockMarketYear#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/InterestRate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="44" selection-start="271" selection-end="271" vertical-scroll-proportion="0.3161876">
+        <state line="40" column="1" selection-start="1041" selection-end="1041" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="method#toString#0;class#InterestRate#0" expanded="false" />
-            <element signature="method#equals#0;class#InterestRate#0" expanded="false" />
             <element signature="method#hashCode#0;class#InterestRate#0" expanded="false" />
+            <element signature="method#equals#0;class#InterestRate#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/TaxRate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="1" selection-start="1206" selection-end="1206" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="method#compoundTaxFor#0;class#TaxRate#0" expanded="false" />
+            <element signature="method#toString#0;class#TaxRate#0" expanded="false" />
+            <element signature="method#equals#0;class#TaxRate#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/_InterestRateTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="34" selection-start="330" selection-end="330" vertical-scroll-proportion="0.37367624">
+        <state line="23" column="26" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -621,26 +699,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/_TaxRateTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="8" selection-start="379" selection-end="379" vertical-scroll-proportion="0.34493193">
+        <state line="23" column="26" selection-start="583" selection-end="583" vertical-scroll-proportion="0.6140625">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/Dollars.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="55" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/dennistraub/finances/TaxRate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="220" selection-end="220" vertical-scroll-proportion="0.3161876">
-          <folding>
-            <element signature="method#toString#0;class#TaxRate#0" expanded="false" />
-            <element signature="method#equals#0;class#TaxRate#0" expanded="false" />
-            <element signature="method#hashCode#0;class#TaxRate#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>

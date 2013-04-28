@@ -9,24 +9,21 @@ public class Dollars {
         this.amount = amount;
     }
 
-    public int amount() {
+    public int toInt() {
         return amount;
     }
 
-    public Dollars add(Dollars summand) {
-        return new Dollars(this.amount() + summand.amount());
+    public Dollars add(Dollars dollars) {
+        return new Dollars(this.amount + dollars.amount);
     }
 
-    public Dollars subtract(Dollars subtrahend) {
-        return new Dollars(this.amount() - subtrahend.amount());
+    public Dollars subtract(Dollars dollars) {
+        return new Dollars(this.amount - dollars.amount);
     }
 
-    public Dollars multiplyWith(double factor) {
-        return new Dollars((int)(this.amount * factor));
-    }
-
-    public Dollars divideBy(double divisor) {
-        return new Dollars((int)(this.amount() / divisor));
+    public Dollars subtractToZero(Dollars dollars) {
+        int result = this.amount - dollars.amount;
+        return new Dollars(Math.max(0, result));
     }
 
     @Override
@@ -35,20 +32,21 @@ public class Dollars {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        Dollars dollars = (Dollars) o;
-
-        if (amount != dollars.amount) return false;
-
-        return true;
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + amount;
+        return result;
     }
 
     @Override
-    public int hashCode() {
-        return amount;
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null) return false;
+        if (getClass() != obj.getClass()) return false;
+        Dollars other = (Dollars) obj;
+        if (amount != other.amount) return false;
+        return true;
     }
 
 }

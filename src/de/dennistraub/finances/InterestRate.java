@@ -5,34 +5,37 @@ public class InterestRate {
 
     private double rate;
 
-    public InterestRate(int rateAsPercentage) {
-        this.rate = rateAsPercentage / 100.0;
+    public InterestRate(double rateAsPercentage) {
+        rate = rateAsPercentage / 100.0;
     }
 
     public Dollars interestOn(Dollars amount) {
-        return amount.multiplyWith(rate);
+        return new Dollars((int)(amount.toInt() * rate));
     }
 
     @Override
     public String toString() {
-        return (int)(rate * 100) + "%";
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        InterestRate that = (InterestRate) o;
-
-        if (Double.compare(that.rate, rate) != 0) return false;
-
-        return true;
+        return (rate * 100) + "%";
     }
 
     @Override
     public int hashCode() {
-        long temp = Double.doubleToLongBits(rate);
-        return (int) (temp ^ (temp >>> 32));
+        final int prime = 31;
+        int result = 1;
+        long temp;
+        temp = Double.doubleToLongBits(rate);
+        result = prime * result + (int) (temp ^ (temp >>> 32));
+        return result;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null) return false;
+        if (getClass() != obj.getClass()) return false;
+        InterestRate other = (InterestRate) obj;
+        if (Double.doubleToLongBits(rate) != Double.doubleToLongBits(other.rate)) return false;
+        return true;
+    }
+
 }

@@ -9,43 +9,37 @@ public class _DollarsTest {
 
     @Test
     public void addition() {
-        Dollars dollars1 = new Dollars(1000);
-        Dollars dollars2 = new Dollars(2000);
-        Dollars sum = dollars1.add(dollars2);
-        assertEquals(3000, sum.amount());
+        assertEquals(new Dollars(40), new Dollars(10).add(new Dollars(30)));
     }
 
     @Test
     public void subtraction() {
-        Dollars dollars1 = new Dollars(3000);
-        Dollars dollars2 = new Dollars(1000);
-        Dollars sum = dollars1.subtract(dollars2);
-        assertEquals(2000, sum.amount());
+        assertEquals("positive result", new Dollars(20), new Dollars(50).subtract(new Dollars(30)));
+        assertEquals("negative result", new Dollars(-60), new Dollars(40).subtract(new Dollars(100)));
     }
 
     @Test
-    public void multiplication() {
-        Dollars dollars = new Dollars(3000);
-        Dollars product = dollars.multiplyWith(2);
-        assertEquals(6000, product.amount());
+    public void subtractToZero() {
+        assertEquals("positive result", new Dollars(20), new Dollars(50).subtractToZero(new Dollars(30)));
+        assertEquals("no negative result--return zero instead", new Dollars(0), new Dollars(40).subtractToZero(new Dollars(100)));
     }
 
     @Test
-    public void division() {
-        Dollars dollars = new Dollars(3000);
-        Dollars quotient = dollars.divideBy(2);
-        assertEquals(1500, quotient.amount());
+    public void toInt() {
+        assertEquals(20, new Dollars(20).toInt());
     }
 
     @Test
     public void valueObject() {
-        Dollars dollars1a = new Dollars(2000);
-        Dollars dollars1b = new Dollars(2000);
-        Dollars dollars2 = new Dollars(3000);
+        Dollars dollars1a = new Dollars(10);
+        Dollars dollars1b = new Dollars(10);
+        Dollars dollars2 = new Dollars(20);
 
-        assertEquals("$2000", dollars1a.toString());
-        assertTrue(dollars1a.equals(dollars1b));
-        assertFalse(dollars1a.equals(dollars2));
-        assertTrue(dollars1a.hashCode() == dollars1b.hashCode());
+        assertEquals("$10", dollars1a.toString());
+        assertTrue("dollars with same amount should be equal", dollars1a.equals(dollars1b));
+        assertFalse("dollars with different amounts should not be equal", dollars1a.equals(dollars2));
+        assertTrue("equal dollars should have same hash code", dollars1a.hashCode() == dollars1b.hashCode());
     }
+
+
 }

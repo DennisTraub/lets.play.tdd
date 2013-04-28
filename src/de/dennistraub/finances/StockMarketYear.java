@@ -2,17 +2,14 @@
 package de.dennistraub.finances;
 
 public class StockMarketYear {
+
     private Dollars startingBalance;
     private Dollars startingPrincipal;
     private InterestRate interestRate;
-    private Dollars totalWithdrawals;
     private TaxRate capitalGainsTaxRate;
+    private Dollars totalWithdrawals;
 
-    public StockMarketYear(
-            Dollars startingBalance,
-            Dollars startingPrincipal,
-            InterestRate interestRate,
-            TaxRate capitalGainsTaxRate) {
+    public StockMarketYear(Dollars startingBalance, Dollars startingPrincipal, InterestRate interestRate, TaxRate capitalGainsTaxRate) {
         this.startingBalance = startingBalance;
         this.startingPrincipal = startingPrincipal;
         this.interestRate = interestRate;
@@ -32,24 +29,8 @@ public class StockMarketYear {
         return interestRate;
     }
 
-    public Dollars endingBalance() {
-        return startingBalance().subtract(totalWithdrawn()).add(interestEarned());
-    }
-
-    public Dollars endingPrincipal() {
-        Dollars result = (startingPrincipal().subtract(totalWithdrawals));
-        if (result.amount() >= 0)
-            return result;
-        else
-            return new Dollars(0);
-    }
-
-    public StockMarketYear nextYear() {
-        return new StockMarketYear(
-                endingBalance(),
-                startingPrincipal,
-                interestRate(),
-                capitalGainsTaxRate);
+    public TaxRate capitalGainsTaxRate() {
+        return capitalGainsTaxRate;
     }
 
     public void withdraw(Dollars amount) {
@@ -57,12 +38,7 @@ public class StockMarketYear {
     }
 
     private Dollars capitalGainsWithdrawn() {
-        Dollars principalMinusWithdrawals = startingPrincipal().subtract(totalWithdrawals);
-        Dollars result = principalMinusWithdrawals.multiplyWith(-1);
-        if (result.amount() >= 0)
-            return result;
-        else
-            return new Dollars(0);
+        return totalWithdrawals.subtractToZero(startingPrincipal());
     }
 
     public Dollars capitalGainsTaxIncurred() {
@@ -74,11 +50,19 @@ public class StockMarketYear {
     }
 
     public Dollars interestEarned() {
-        Dollars interest = interestRate.interestOn(startingBalance.subtract(totalWithdrawn()));
-        return interest;
+        return interestRate.interestOn(startingBalance.subtract(totalWithdrawn()));
     }
 
-    public TaxRate capitalGainsTaxRate() {
-        return capitalGainsTaxRate;
+    public Dollars endingBalance() {
+        return startingBalance.subtract(totalWithdrawn()).add(interestEarned());
     }
+
+    public Dollars endingPrincipal() {
+        return startingPrincipal.subtractToZero(totalWithdrawals);
+    }
+
+    public StockMarketYear nextYear() {
+        return new StockMarketYear(this.endingBalance(), this.endingPrincipal(), this.interestRate(), this.capitalGainsTaxRate());
+    }
+
 }

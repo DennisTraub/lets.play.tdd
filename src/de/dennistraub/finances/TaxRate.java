@@ -9,31 +9,38 @@ public class TaxRate {
         this.rate = rateAsPercentage / 100.0;
     }
 
-    public Dollars compoundTaxFor(Dollars dollars) {
-        return dollars.divideBy(1 - rate).subtract(dollars);
+    public Dollars simpleTaxFor(Dollars amount) {
+        return new Dollars((int)(rate * amount.toInt()));
+    }
+
+    public Dollars compoundTaxFor(Dollars amount) {
+        int amountAsInt = amount.toInt();
+        return new Dollars((int)((amountAsInt / (1 - rate)) - amountAsInt));
     }
 
     @Override
     public String toString() {
-        return (int)(rate * 100) + "%";
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        TaxRate taxRate = (TaxRate) o;
-
-        if (Double.compare(taxRate.rate, rate) != 0) return false;
-
-        return true;
+        return (rate * 100) + "%";
     }
 
     @Override
     public int hashCode() {
-        long temp = Double.doubleToLongBits(rate);
-        return (int) (temp ^ (temp >>> 32));
+        final int prime = 31;
+        int result = 1;
+        long temp;
+        temp = Double.doubleToLongBits(rate);
+        result = prime * result + (int) (temp ^ (temp >>> 32));
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null) return false;
+        if (getClass() != obj.getClass()) return false;
+        TaxRate other = (TaxRate) obj;
+        if (Double.doubleToLongBits(rate) != Double.doubleToLongBits(other.rate)) return false;
+        return true;
     }
 
 }
