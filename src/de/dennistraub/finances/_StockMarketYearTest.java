@@ -33,18 +33,18 @@ public class _StockMarketYearTest {
     public void capital_gains_tax() {
         StockMarketYear year = newYear();
         year.withdraw(4000);
-        assertEquals(333, year.capitalGainsTaxIncurred());
-        assertEquals(4333, year.totalWithdrawn());
+        assertEquals(333, year.capitalGainsTaxIncurred().amount());
+        assertEquals(4333, year.totalWithdrawn().amount());
     }
 
     @Test
     public void interest_earned() {
         StockMarketYear year = newYear();
-        assertEquals("basic interest earned", 1000, year.interestEarned());
+        assertEquals("basic interest earned", 1000, year.interestEarned().amount());
         year.withdraw(2000);
-        assertEquals("withdrawals don't earn interest", 800, year.interestEarned());
+        assertEquals("withdrawals don't earn interest", 800, year.interestEarned().amount());
         year.withdraw(2000);
-        assertEquals("capital gains tax doesn't earn interest", 566, year.interestEarned());
+        assertEquals("capital gains tax doesn't earn interest", 566, year.interestEarned().amount());
     }
 
     @Test
@@ -52,26 +52,26 @@ public class _StockMarketYearTest {
         StockMarketYear year = newYear();
         year.withdraw(1000);
         year.withdraw(400);
-        assertEquals("total withdrawal", 1400, year.totalWithdrawn());
+        assertEquals("total withdrawal", 1400, year.totalWithdrawn().amount());
         assertEquals("ending principal", 1600, year.endingPrincipal());
-        assertEquals("ending balance", 9460, year.endingBalance());
+        assertEquals("ending balance", 9460, year.endingBalance().amount());
     }
 
     @Test
     public void ending_balance() {
         StockMarketYear year = newYear();
-        assertEquals(11000, year.endingBalance());
+        assertEquals(11000, year.endingBalance().amount());
         year.withdraw(1000);
-        assertEquals(9900, year.endingBalance());
+        assertEquals(9900, year.endingBalance().amount());
         year.withdraw(3000);
-        assertEquals(6233, year.endingBalance());
+        assertEquals(6233, year.endingBalance().amount());
     }
 
     @Test
     public void values_carry_over_to_next_year() {
         StockMarketYear thisYear = newYear();
         StockMarketYear nextYear = thisYear.nextYear();
-        assertEquals(thisYear.endingBalance(), nextYear.startingBalance().amount());
+        assertEquals(thisYear.endingBalance(), nextYear.startingBalance());
         assertEquals(thisYear.endingPrincipal(), nextYear.startingPrincipal().amount());
         assertEquals(thisYear.interestRate(), nextYear.interestRate());
         assertEquals(thisYear.capitalGainsTaxRate(), nextYear.capitalGainsTaxRate());

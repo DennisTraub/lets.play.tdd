@@ -32,8 +32,8 @@ public class StockMarketYear {
         return interestRate;
     }
 
-    public int endingBalance() {
-        return startingBalance().amount() - totalWithdrawn() + interestEarned();
+    public Dollars endingBalance() {
+        return startingBalance().subtract(totalWithdrawn()).add(interestEarned());
     }
 
     public int endingPrincipal() {
@@ -43,7 +43,7 @@ public class StockMarketYear {
 
     public StockMarketYear nextYear() {
         return new StockMarketYear(
-                new Dollars(endingBalance()),
+                endingBalance(),
                 startingPrincipal,
                 interestRate(),
                 capitalGainsTaxRate);
@@ -54,23 +54,26 @@ public class StockMarketYear {
     }
 
     private Dollars capitalGainsWithdrawn() {
-        Dollars result = (startingPrincipal().subtract(totalWithdrawals)).multiplyBy(-1);
-        if (result.amount() >= 0)
+        Dollars principalMinusWithdrawals = startingPrincipal().subtract(totalWithdrawals);
+        Dollars result = principalMinusWithdrawals.multiplyBy(-1);
+        if (result.amount() >= new Dollars(0).amount())
             return result;
         else
             return new Dollars(0);
     }
 
-    public int capitalGainsTaxIncurred() {
-        return capitalGainsTaxRate.compoundTaxFor(capitalGainsWithdrawn().amount());
+    public Dollars capitalGainsTaxIncurred() {
+        int taxAmount = capitalGainsTaxRate.compoundTaxFor(capitalGainsWithdrawn().amount());
+        return new Dollars(taxAmount);
     }
 
-    public int totalWithdrawn() {
-        return totalWithdrawals.amount() + capitalGainsTaxIncurred();
+    public Dollars totalWithdrawn() {
+        return totalWithdrawals.add(capitalGainsTaxIncurred());
     }
 
-    public int interestEarned() {
-        return interestRate.interestOn(startingBalance.amount() - totalWithdrawn());
+    public Dollars interestEarned() {
+        int interest = interestRate.interestOn(startingBalance.subtract(totalWithdrawn()).amount());
+        return new Dollars(interest);
     }
 
     public TaxRate capitalGainsTaxRate() {
