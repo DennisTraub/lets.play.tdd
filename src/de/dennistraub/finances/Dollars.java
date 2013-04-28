@@ -28,4 +28,26 @@ public class Dollars {
     public Dollars divideBy(int divisor) {
         return new Dollars((this.amount() / divisor));
     }
+
+    @Override
+    public String toString() {
+        return "$" + amount;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Dollars dollars = (Dollars) o;
+
+        if (amount != dollars.amount) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        return amount;
+    }
 }

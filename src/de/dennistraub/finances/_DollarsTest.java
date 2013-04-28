@@ -36,4 +36,16 @@ public class _DollarsTest {
         Dollars quotient = dollars.divideBy(2);
         assertEquals(1500, quotient.amount());
     }
+
+    @Test
+    public void valueObject() {
+        Dollars dollars1a = new Dollars(2000);
+        Dollars dollars1b = new Dollars(2000);
+        Dollars dollars2 = new Dollars(3000);
+
+        assertEquals("$2000", dollars1a.toString());
+        assertTrue(dollars1a.equals(dollars1b));
+        assertFalse(dollars1a.equals(dollars2));
+        assertTrue(dollars1a.hashCode() == dollars1b.hashCode());
+    }
 }
