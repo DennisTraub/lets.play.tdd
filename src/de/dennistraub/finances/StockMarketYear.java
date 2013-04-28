@@ -53,8 +53,7 @@ public class StockMarketYear {
     }
 
     public int capitalGainsTaxIncurred() {
-        double capitalGainsAsDouble = capitalGainsWithdrawn();
-        return (int)((capitalGainsAsDouble / (1 - capitalGainsTaxRate.rate())) - capitalGainsAsDouble);
+        return capitalGainsTaxRate.compoundTaxFor(capitalGainsWithdrawn());
     }
 
     public int totalWithdrawn() {
