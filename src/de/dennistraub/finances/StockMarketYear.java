@@ -36,9 +36,12 @@ public class StockMarketYear {
         return startingBalance().subtract(totalWithdrawn()).add(interestEarned());
     }
 
-    public int endingPrincipal() {
-        int amount = (startingPrincipal().subtract(totalWithdrawals)).amount();
-        return Math.max(0, amount);
+    public Dollars endingPrincipal() {
+        Dollars result = (startingPrincipal().subtract(totalWithdrawals));
+        if (result.amount() >= 0)
+            return result;
+        else
+            return new Dollars(0);
     }
 
     public StockMarketYear nextYear() {
@@ -49,14 +52,14 @@ public class StockMarketYear {
                 capitalGainsTaxRate);
     }
 
-    public void withdraw(int amount) {
-        this.totalWithdrawals = new Dollars(totalWithdrawals.amount() + amount);
+    public void withdraw(Dollars amount) {
+        this.totalWithdrawals = totalWithdrawals.add(amount);
     }
 
     private Dollars capitalGainsWithdrawn() {
         Dollars principalMinusWithdrawals = startingPrincipal().subtract(totalWithdrawals);
         Dollars result = principalMinusWithdrawals.multiplyBy(-1);
-        if (result.amount() >= new Dollars(0).amount())
+        if (result.amount() >= 0)
             return result;
         else
             return new Dollars(0);
